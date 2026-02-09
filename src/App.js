@@ -7,18 +7,15 @@ function App() {
   return (
     <div className="app">
       {!loggedIn ? (
-        <div className="login-container">
+        <div className="container">
           <div className="left">
-            <h1 className="logo">facebook</h1>
-            <p>
-              Facebook helps you connect and share with the people in your
-              life.
-            </p>
+            <h1 className="logo">ConnectHub</h1>
+            <p>Connect and share moments with your friends.</p>
           </div>
 
           <div className="right">
             <div className="login-box">
-              <input type="text" placeholder="Email or phone number" />
+              <input type="text" placeholder="Email or Username" />
               <input type="password" placeholder="Password" />
 
               <button
@@ -28,11 +25,11 @@ function App() {
                 Log In
               </button>
 
-              <p className="forgot">Forgotten password?</p>
+              <p className="forgot">Forgot password?</p>
 
               <hr />
 
-              <button className="create-btn">
+              <button className="signup-btn">
                 Create New Account
               </button>
             </div>
@@ -40,8 +37,10 @@ function App() {
         </div>
       ) : (
         <div className="home">
-          <h2>Welcome to Facebook Clone ✅</h2>
-          <button onClick={() => setLoggedIn(false)}>Logout</button>
+          <h2>Welcome to ConnectHub ✅</h2>
+          <button onClick={() => setLoggedIn(false)}>
+            Logout
+          </button>
         </div>
       )}
     </div>
@@ -49,4 +48,3 @@ function App() {
 }
 
 export default App;
-

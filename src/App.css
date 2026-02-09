@@ -1,47 +1,55 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f0f2f5;
+  background: #eef1f6;
 }
 
-.login-container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  gap: 80px;
+  min-height: 100vh;
+  gap: 60px;
+  padding: 20px;
 }
 
-.logo {
-  color: #1877f2;
-  font-size: 56px;
-}
-
-.left p {
-  font-size: 24px;
+/* Left section */
+.left {
   max-width: 400px;
 }
 
+.logo {
+  color: #6c5ce7;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.left p {
+  font-size: 20px;
+}
+
+/* Login card */
 .login-box {
   background: white;
-  padding: 20px;
-  width: 350px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 360px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .login-box input {
   width: 100%;
   padding: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   border-radius: 6px;
   border: 1px solid #ddd;
+  font-size: 14px;
 }
 
 .login-btn {
   width: 100%;
   padding: 12px;
-  background: #1877f2;
+  background: #6c5ce7;
   color: white;
   border: none;
   border-radius: 6px;
@@ -49,20 +57,22 @@ body {
   cursor: pointer;
 }
 
-.create-btn {
+.signup-btn {
   width: 100%;
   padding: 12px;
-  background: #42b72a;
+  background: #00b894;
   color: white;
   border: none;
   border-radius: 6px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .forgot {
   text-align: center;
-  color: #1877f2;
+  color: #6c5ce7;
   cursor: pointer;
+  margin: 10px 0;
 }
 
 .home {
@@ -70,3 +80,10 @@ body {
   margin-top: 100px;
 }
 
+/* Mobile view */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
